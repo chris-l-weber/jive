@@ -8,13 +8,13 @@
      
       <action name="list" 
             class="com.chrisweber.jive.OSControler" 
-            method="execute">
-            <result name="success">/index.jsp</result>
+            method="list">
+            <result name="Success">/list.jsp</result>
       </action>
       <action name="add" 
             class="com.chrisweber.jive.OSControler" 
             method="execute">
-            <result name="success">/index.jsp</result>
+            <result name="Success">/index.jsp</result>
       </action>
    </package>
 </struts>
