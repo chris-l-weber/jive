@@ -2,9 +2,7 @@ package com.chrisweber.jive;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.LinkedList;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -12,7 +10,7 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class ADD extends ActionSupport implements ServletRequestAware {
+public class Add extends ActionSupport implements ServletRequestAware {
 
 	private	HttpServletRequest request;
 	private String name="Redhat";
@@ -24,7 +22,7 @@ public class ADD extends ActionSupport implements ServletRequestAware {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-		    conn = DriverManager.getConnection("jdbc:mysql://localhost/clwtest?user=root");
+		    conn = DriverManager.getConnection(Config.CS);
 
 		    Statement st=conn.createStatement();
 			

@@ -12,7 +12,7 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class LIST extends ActionSupport implements ServletRequestAware{
+public class List extends ActionSupport implements ServletRequestAware{
 	private	HttpServletRequest request;
 	
 	public String execute() throws Exception {
@@ -21,7 +21,7 @@ public class LIST extends ActionSupport implements ServletRequestAware{
 		OsData item;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-		    conn = DriverManager.getConnection("jdbc:mysql://localhost/clwtest?user=root");
+		    conn = DriverManager.getConnection(Config.CS);
 
 		    Statement st=conn.createStatement();
 			ResultSet rs = st.executeQuery("select * from os");
