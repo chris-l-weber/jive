@@ -18,6 +18,17 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+div.item {
+   	margin-top: 3px;
+	margin-bottom: 3px;
+   	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-color: aqua;
+	width: 200px;
+	border-style: solid;
+	}
 </style>
 </head>
 <body>
@@ -57,6 +68,8 @@ String tempNotes = b.getNote();
 }
  
 %>
+
 </table>
+<div class = item onclick="location.href='../'"> back </div>
 </body>
 </html>
