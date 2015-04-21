@@ -70,6 +70,6 @@ String tempNotes = b.getNote();
 %>
 
 </table>
-<div class = item onclick="location.href='../'"> back </div>
+<div class = item onclick="location.href='index'"> back </div>
 </body>
 </html>
