@@ -14,9 +14,8 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class ADD extends ActionSupport implements ServletRequestAware {
 
-	public	HttpServletRequest request;
+	private	HttpServletRequest request;
 	private String name="Redhat";
-	
 	private String version="1";
 	private String notes ="OLD";
 	
@@ -64,21 +63,27 @@ public class ADD extends ActionSupport implements ServletRequestAware {
     public HttpServletRequest getServletRequest() {
         return request;
     }
+    
     public String getName() {
 		return name;
 	}
+    
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getVersion() {
 		return version;
 	}
+	
 	public void setVersion(String version) {
 		this.version = version;
 	}
+	
 	public String getNotes() {
 		return notes;
 	}
+	
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}

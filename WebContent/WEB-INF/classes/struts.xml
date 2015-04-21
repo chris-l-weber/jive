@@ -13,10 +13,8 @@
             method="execute">
             <result name="Success">/list.jsp</result>
       </action>
-      <action name="input" 
-            class="com.chrisweber.jive.OSControler" 
-            method="execute">
-            <result name="Success">/input.jsp</result>
+      <action name="input" >
+            <result>/input.jsp</result>
       </action>
       <action name="add" 
             class="com.chrisweber.jive.ADD" 

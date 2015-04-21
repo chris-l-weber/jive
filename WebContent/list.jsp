@@ -33,43 +33,44 @@ div.item {
 </head>
 <body>
 <table>
-<tr>
-<th> OS Name</th>
-<th> Version </th>
-<th> Notes </th>
-</tr>
+	<tr>
+		<th> OS Name</th>
+		<th> Version </th>
+		<th> Notes </th>
+	</tr>
  <%
 List l=(List)request.getAttribute("disp");
 if(l!=null)
 {
  
-Iterator it=l.iterator();
+	Iterator it=l.iterator();
  
-while(it.hasNext())
-{
+	while(it.hasNext())
+	{
  
-com.chrisweber.jive.OsData b=(com.chrisweber.jive.OsData)it.next();
-String tempName = b.getName();
-String tempVersion = b.getVersion();
-String tempNotes = b.getNote();
+		com.chrisweber.jive.OsData b=(com.chrisweber.jive.OsData)it.next();
+		String tempName = b.getName();
+		String tempVersion = b.getVersion();
+		String tempNotes = b.getNote();
  
 %>
-<tr>
+		<tr>
 
-<td><%= tempName %></td>
-<td><%= tempVersion %></td>
-<td><%= tempNotes %></td>
+			<td><%= tempName %></td>
+			<td><%= tempVersion %></td>
+			<td><%= tempNotes %></td>
 
-</tr>
+		</tr>
  
 <%
  
-}
+	}
 }
  
 %>
 
 </table>
-<div class = item onclick="location.href='index'"> back </div>
+<div class = item onclick="location.href='index'"> Back </div>
+<div class = item onclick="location.href='input'"> Add </div>
 </body>
 </html>

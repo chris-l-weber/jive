@@ -13,7 +13,7 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LIST extends ActionSupport implements ServletRequestAware{
-	public	HttpServletRequest request;
+	private	HttpServletRequest request;
 	
 	public String execute() throws Exception {
 		Connection conn = null;
@@ -45,6 +45,7 @@ public class LIST extends ActionSupport implements ServletRequestAware{
 		
 		return "Success";
 	}
+	
 	public void setServletRequest(HttpServletRequest request) {
         this.request = request;
     }

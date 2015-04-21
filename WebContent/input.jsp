@@ -28,6 +28,6 @@
       <s:textfield name="notes" label="notes" size="50" />
       <s:submit name="submit" label="Submit" align="center" />
    </s:form>
-<div class = item onclick="location.href='index'"> back </div>
+<div class = item onclick="location.href='index'"> Back </div>
 </body>
 </html>

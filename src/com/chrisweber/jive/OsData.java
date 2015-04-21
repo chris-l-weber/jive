@@ -8,18 +8,23 @@ public class OsData {
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getVersion() {
 		return version;
 	}
+	
 	public void setVersion(String version) {
 		this.version = version;
 	}
+	
 	public String getNote() {
 		return note;
 	}
+	
 	public void setNote(String note) {
 		this.note = note;
 	}
