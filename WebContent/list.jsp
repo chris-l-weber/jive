@@ -9,9 +9,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>OS Listing</title>
+<style>
+table {
+	width: 80%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 </head>
 <body>
 <table>
+<tr>
+<th> OS Name</th>
+<th> Version </th>
+<th> Notes </th>
+</tr>
  <%
 List l=(List)request.getAttribute("disp");
 if(l!=null)
